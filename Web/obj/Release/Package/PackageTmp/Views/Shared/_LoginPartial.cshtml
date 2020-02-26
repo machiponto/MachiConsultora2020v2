@@ -1,0 +1,31 @@
+﻿    @if ("Invitado" == @Session["usuario"].ToString())
+    {
+
+        //string usuario = @Session["usuario"].ToString();
+        string carrito = @Session["Carrito"].ToString();
+        carrito = carrito + " (" + @ViewBag.Cantidad + ")";
+        string iniciarSesion = @Session["IniciarSesion"].ToString();
+    
+        <ul class="nav navbar-nav navbar-right">
+            <li>@Html.ActionLink(carrito, "Pedido", "Carrito", routeValues: null, htmlAttributes: new { id = Session.SessionID })</li>
+            <li>@Html.ActionLink(iniciarSesion, "login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+        </ul>
+    
+    }
+    else
+    {
+
+        string usuario = @Session["usuario"].ToString();
+        string carrito = @Session["Carrito"].ToString();
+        carrito = carrito + " (" + @ViewBag.Cantidad + ")";
+        string cerrarSesion = @Session["CerrarSesion"].ToString();
+    
+        <ul class="nav navbar-nav navbar-right">
+            <li>@Html.ActionLink(usuario, "DetalleCliente", new { pUsuario = usuario })</li>
+            <li>@Html.ActionLink(carrito, "Pedido", "Carrito", routeValues: null, htmlAttributes: new { id = Session.SessionID })</li>
+            @*<li>@Html.ActionLink(registrarse, "altaCliente", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>*@
+            <li>@Html.ActionLink(cerrarSesion, "logout", "Account")</li>
+        </ul>
+    }
+
+

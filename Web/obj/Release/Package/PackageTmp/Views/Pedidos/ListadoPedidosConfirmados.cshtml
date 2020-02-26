@@ -1,0 +1,104 @@
+﻿@model IEnumerable<BIZ.Pedido>
+
+@{
+    ViewBag.Title = "Listado de Pedidos";
+    int resultado = 0;
+}
+
+<div class="bs-docs-section">
+
+    <div class="row">
+        <div class="col-lg-8">
+
+            <div class="row">
+
+                <h2>@Session["ListadoPedidosConfirmados"]</h2>
+                
+                <form class="navbar-form navbar-right" role="search" action="/Pedidos/buscarPedidos" method="post">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search" id="pValor" name="pValor">
+                    </div>
+                     <input type="hidden" name="pSeccion" value="/ListadoPedidosConfirmados" />
+                    <button type="submit" class="btn btn-default">@Session["Buscar"]</button>
+                </form>
+
+            </div>
+
+            <div class="bs-example text-center">
+                <table class="table table-striped table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th class="text-center">
+                                @Session["NroPedido"]
+                            </th>
+                            <th class="text-center">
+                                @Session["Fecha"]
+                            </th>
+                            <th class="text-center">
+                                @Session["Estado"]
+                            </th>
+                            <th class="text-center">
+                                @Session["NombreCliente"]
+                            </th>
+                            <th class="text-center">
+                                @Session["CantidadProductos"]
+                            </th>
+                            <th class="text-center">
+                                @Session["MontoTotal"]
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.idPedido)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.fecha.Day)/@Html.DisplayFor(modelItem => item.fecha.Month)/@Html.DisplayFor(modelItem => item.fecha.Year)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.estado)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.oCliente.nombre)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.listaProductos.Count)
+                                </td>
+                                <td>
+                                    @foreach (var prod in item.listaProductos)
+                                    {
+
+                                        resultado = resultado + (int)prod.costoPublico;
+                                    }
+                                    $ @resultado
+
+                                </td>
+                                <td>
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li class="dropdown">
+                                            <a class="dropdown-toggle" data-toggle="dropdown">Opciones <b class="caret"></b></a>
+                                            <ul class="dropdown-menu">
+                                                <li>@Html.ActionLink("Detalles", "DetallePedidoConfirmado", new { pIdPedido = item.idPedido })</li>
+                                                <li>@Html.ActionLink("Finalizar", "FinalizarPedido", new { pIdPedido = item.idPedido })</li>
+                                                <li>@Html.ActionLink("Cancelar", "CancelarPedido", new { pIdPedido = item.idPedido })</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            
+                            if (resultado != 0) {
+                                resultado = 0;
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+

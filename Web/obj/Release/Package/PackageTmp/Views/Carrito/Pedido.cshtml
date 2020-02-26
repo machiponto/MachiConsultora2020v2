@@ -1,0 +1,41 @@
+﻿@model IEnumerable<BIZ.Producto>
+
+@{
+    ViewBag.Title = "Carrito";
+
+}
+
+@*@Session["PuntoNavegacion"] = "/Carrito/Pedido";*@
+
+<h2>Bienvenido a su Carrito de Compras</h2>
+
+    
+
+
+        <div class="row">
+                   
+                    @Html.Partial("~/Views/Secciones/_ListarProductosEnPedido.cshtml")
+
+
+<div class="col-sm-4 col-lg-4 col-md-4">
+    <div class="thumbnail">
+        <h4>@Session["MontoTotal"]: $ @ViewBag.CostoTotal</h4>
+        <div class="form-actions text-center">
+            <form action="/Carrito/confirmarPedido" method="post">
+                        
+                <input type="hidden" name="pSession" value="@Session.SessionID" />
+                <input type="submit" value="Confirmar Pedido" class="btn btn-large btn-primary"/>                                 
+                    
+            </form>
+            <form action="/Carrito/cancelarPedido" method="post">
+                        
+                <input type="hidden" name="pSession" value="@Session.SessionID" />
+                <input type="submit" value="Cancelar" class="btn btn-large"/>                                 
+            
+            </form>
+        </div>     
+    </div> 
+</div>
+</div>
+            
+    

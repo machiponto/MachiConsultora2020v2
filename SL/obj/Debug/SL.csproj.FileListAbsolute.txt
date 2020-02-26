@@ -1,0 +1,12 @@
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\SL\bin\Debug\ServiceLayer.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\SL\bin\Debug\ServiceLayer.pdb
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\SL\obj\Debug\ServiceLayer.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\SL\obj\Debug\ServiceLayer.pdb
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\SL\obj\Debug\SL.csprojAssemblyReference.cache
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\SL\obj\Debug\SL.csproj.CoreCompileInputs.cache
+D:\Proyectos\MachiConsultora\SL\bin\Debug\ServiceLayer.dll
+D:\Proyectos\MachiConsultora\SL\bin\Debug\ServiceLayer.pdb
+D:\Proyectos\MachiConsultora\SL\obj\Debug\SL.csprojAssemblyReference.cache
+D:\Proyectos\MachiConsultora\SL\obj\Debug\SL.csproj.CoreCompileInputs.cache
+D:\Proyectos\MachiConsultora\SL\obj\Debug\ServiceLayer.dll
+D:\Proyectos\MachiConsultora\SL\obj\Debug\ServiceLayer.pdb

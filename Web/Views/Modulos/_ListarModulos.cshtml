@@ -1,0 +1,41 @@
+﻿@model IEnumerable<BI.ClsModulo>
+
+@if (Model != null)
+{
+    foreach (var Modulo in Model)
+    {
+    <div class="col-sm-4 col-lg-4 col-md-4">
+        <div class="thumbnail">
+            @*<img src="~/Content/productos/@Html.DisplayFor(modelItem => item.ubicacionFoto)" alt=""/>*@
+            <div class="caption">
+                <h4 class="pull-right">$@Html.DisplayFor(modelModulo => Modulo.Id_Modulo)</h4>
+                <h4><a href="#">@Html.DisplayFor(modelModulo => Modulo.moduloDescripcion)</a></h4>
+
+                @* @if(Modulo.activo = true {
+                               <span class="badge pull-right">
+                                    Stock: @Html.DisplayFor(modelItem => item.cantidad)
+                                </span>
+                                }else{
+                                <span class="badge alert-danger pull-right">
+                                    Stock: @Html.DisplayFor(modelItem => item.cantidad)
+                                </span>
+                                }*@
+
+                <p>@Html.DisplayFor(modelModulo => Modulo.moduloDescripcion)</p>
+            </div>
+
+            @*      <form action="/Carrito/agregarProducto" method="post">*@
+
+            <input type="hidden" name="Id_Modulo" value="@Modulo.Id_Modulo" />
+            <input type="hidden" name="moduloDescripcion" value="@Modulo.moduloDescripcion" />
+            <input type="hidden" name="activo" value="@Modulo.activo" />
+
+            <input type="hidden" name="pSession" value="@Session.SessionID" />
+            <input type="submit" value="Agregar..." class="btn btn-primary" />
+        @*    </form>*@
+
+        </div>
+    </div>
+    }
+}
+ 

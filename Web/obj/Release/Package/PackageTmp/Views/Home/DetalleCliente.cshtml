@@ -1,0 +1,144 @@
+﻿@model Web.Models.DetalleCliente
+
+@{
+    ViewBag.Title = "Detalle de Cliente";
+    int resultado = 0;
+}
+
+<div class="container">
+    <div class="col-md-9">
+
+        @*MENSAJE DE ALERTA ERROR Y OK*@
+        @if (@ViewBag.mostrarMensaje == "OK")
+                           {           
+            <div class="alert alert-info alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                @ViewBag.mensaje
+            </div>   
+                           }else if(@ViewBag.mostrarMensaje == "ERROR"){
+            <div class="alert alert-danger alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                @ViewBag.mensaje
+            </div>
+                           }else{
+
+                           }
+        <h3 class="text-center">@Session["DatosDeCliente"]</h3>
+
+        <div class="bs-example text-center">
+            <table class="table table-striped table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th class="text-center">
+                            @Session["NombreCliente"]
+                        </th>
+                        <th class="text-center">
+                            @Session["telefono"]
+                        </th>
+                        <th class="text-center">
+                            @Session["email"]
+                        </th>
+                        <th class="text-center">
+                            @Session["direccion"]
+                        </th>
+                        <th class="text-center">
+                            @Session["opcionDePago"]
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(model => model.nombre)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => model.telefono)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => model.email)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => model.direccion)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => model.opcionDePago.nombre)
+                        </td>
+                        <td>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown">Opciones <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li>@Html.ActionLink("Editar", "editarCliente", new { pIdCliente = Model.idCliente })</li>
+                                        @* <li>@Html.ActionLink("Confirmar", "ConfirmarPedido", new { pIdPedido = item.idPedido })</li>
+                                                <li>@Html.ActionLink("Cancelar", "CancelarPedido", new { pIdPedido = item.idPedido })</li>*@
+                                    </ul>
+                                </li>
+                            </ul>
+                        </td>
+                </tbody>
+            </table>
+        </div>
+
+        <h3 class="text-center">@Session["ListadoDePedidos"]</h3>
+
+        <div class="bs-example text-center">
+            <table class="table table-striped table-bordered table-hover text-center">
+                <thead>
+                    <tr>
+                        <th class="text-center">
+                            @Session["NroPedido"]
+                        </th>
+                        <th class="text-center">
+                            @Session["Fecha"]
+                        </th>
+                        <th class="text-center">
+                            @Session["Estado"]
+                        </th>
+                        <th class="text-center">
+                            @Session["PrecioTotal"]
+                        </th>
+                        <th class="text-center">
+                            @Session["CantidadProductos"]
+                        </th>
+                    </tr>
+                </thead>
+                 <tbody>
+                    @if (Model.listadoPedidos != null)
+                    {
+                        foreach (var _pedido in Model.listadoPedidos)
+                        {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(model => _pedido.idPedido)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => _pedido.fecha.Day)/@Html.DisplayFor(model => _pedido.fecha.Month)/@Html.DisplayFor(model => _pedido.fecha.Year)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => _pedido.estado)
+                        </td>
+                        <td>
+                            @foreach (var prod in _pedido.listaProductos)
+                            {
+                                resultado = resultado + (int)prod.costoPublico;
+                            }
+                            $ @resultado
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => _pedido.listaProductos.Count)
+                        </td>
+                        </tr>
+                        
+                        }
+                        if (resultado != 0)
+                        {
+                            resultado = 0;
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+

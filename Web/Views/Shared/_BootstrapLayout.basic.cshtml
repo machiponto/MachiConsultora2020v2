@@ -1,0 +1,204 @@
+﻿@using Web.Code52.i18n
+@using System.Web.Optimization
+@using BootstrapSupport
+@using NavigationRoutes
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>@ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Mar�a In�s Pontoriero">
+    <link href="~/Content/shop-homepage.css" rel="stylesheet" />
+    <link href="@Styles.Url("~/content/css")" rel="stylesheet"/>
+    @RenderSection("head", required: false)
+    @Html.Partial("_html5shiv")
+    @* favicons and touch icons go here *@
+        
+    <link rel="stylesheet" href="/Content/code52.i18n/Code52.i18n.css" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        <a class="navbar-brand" href="~/Home/Index">Machi Consultora</a>
+        </div>
+             
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                @if (@Session["Perfil"] != null)
+                {
+                    //Acceso a nivel Administrador
+                    if (@Session["Perfil"].ToString() == "Administrador")
+                    {
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">@Session["Administracion"]<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/Account/altaCliente">@Session["AltaCliente"]</a></li>
+                                <li><a href="/Account/altaEmpleado">@Session["AltaEmpleado"]</a></li>
+                                <li><a href="~/ServiceLayer/Bitacora">@Session["Bitacora"]</a></li>
+                                <li>Backup de BD</li>
+                                <li>Restore de BD</li>
+                            </ul>
+                        </li>
+
+                        
+
+                        @*<li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">@Session["Servicios"]<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="~/ABM/altaProducto">@Session["NuevoServicio"]</a></li>
+                        <li><a href="/ABM/listadoProduccion">@Session["listadoProduccion"]</a></li>
+                    </ul>
+                </li>*@
+                    }
+
+                    //Acceso a nivel Consultor
+                    if (@Session["Perfil"].ToString() == "Consultor")
+                    {
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">@Session["Consultor"]<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="~/Secciones/Busqueda">@Session["Busqueda"]</a></li>
+                                <li><a href="~/ABM/altaBusqueda">@Session["NuevaBusqueda"]</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class=" dropdown-toggle" data-toggle="dropdown">@Session["Postulantes"]<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="~/Postulante/evaluarPostulantes">@Session["evaluarPostulantes"]</a></li>
+                                <li><a href="~/ABM/altaBusqueda">@Session["GestionarAvisos"]</a></li>
+                                <li><a href="~/ABM/altaBusqueda">@Session["GenerarCampania"]</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class=" dropdown-toggle" data-toggle="dropdown">@Session["Avisos"]<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="~/ABM/altaBusqueda">@Session["GestionarAvisos"]</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class=" dropdown-toggle" data-toggle="dropdown">@Session["Campanias"]<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="~/ABM/altaBusqueda">@Session["GenerarCampania"]</a></li>
+                            </ul>
+                        </li>
+
+                        @*<li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">@Session["Busqueda"]<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/Comprobante/listadoFacturas">@Session["ConsultaServicios"]</a></li>
+                    </ul>
+                </li>*@
+
+                    }
+
+                    @*//Acceso a nivel Consultor
+            if (@Session["Perfil"].ToString() == "Consultor")
+            {
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Busquedas<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>Menu1</li>
+                        <li>Menu2</li>
+                        <li>Menu3</li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">@Session["Servicios"]<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/Comprobante/listadoFacturas">@Session["ConsultaServicios"]</a></li>
+                    </ul>
+                </li>
+
+            }*@
+
+                }
+            </ul>
+
+            @Html.Partial("_LoginPartial")
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+        <!-- /.container -->
+    </nav>
+    <div class="container">
+        @Html.Partial("_alerts")
+        @Html.Partial("_validationSummary")
+
+        <div class="col-md-3">
+            <img src="~/Content/logos/LogoMC.jpg" />
+            <a>@Html.Partial("LanguageSelection")</a>
+        </div>
+
+        @RenderBody()
+        @*Aca esta la parte del Buscador*@
+        <hr>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    Machi Consultora 2019 - Copyright &copy; - Todos los derechos reservados.
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    @Scripts.Render("~/js")
+    @RenderSection("Scripts", required: false)
+        
+    @*Multi Lenguaje    *@
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/jquery.globalize/globalize.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/jquery.cookie.js")"></script>
+    <script type="text/javascript" src="@Url.Content(string.Format("~/Scripts/jquery.globalize/cultures/globalize.culture.{0}.js", CultureHelper.GetCurrentCulture()))"></script>
+    @if (CultureHelper.GetCurrentNeutralCulture() != "en")
+    {
+        <script type="text/javascript" src="@String.Format("http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/localization/messages_{0}.js", CultureHelper.GetCurrentNeutralCulture())"></script>
+    }
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Code52.i18n.js")"></script>
+    <script type="text/javascript" src="@Url.Content("/i18n/Code52.i18n.language.js")"></script>
+    <script type="text/javascript">
+            Code52.Language.Init('@CultureHelper.GetCurrentCulture()');
+    </script>
+
+    <script type="text/javascript">
+
+        //Funcion para no permitir que se loguee nuevamente cuando vuelvo para atras una vez deslogueado.
+
+        function DisableBackButtonAllBrowsers() {
+            window.history.forward()
+        };
+        DisableBackButtonAllBrowsers();
+        window.onload = DisableBackButtonAllBrowsers;
+        window.onpageshow = function (evts) {
+            if (evts.persisted) DisableBackButtonAllBrowsers();
+        };
+
+        window.onunload = function () { void (0) };
+    </script>
+
+</body>
+</html>
+

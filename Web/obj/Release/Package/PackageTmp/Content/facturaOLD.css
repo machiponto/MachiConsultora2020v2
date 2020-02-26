@@ -1,0 +1,154 @@
+﻿body {
+	min-width: 800px;
+	margin: 0;
+	padding: 0;
+	border: 10;
+	font-family: "Trebuchet MS", "Verdana", "Lucida Grande", Arial, Helvetica, sans-serif;
+	color: #666666;
+	background-color: #B2CFE6;
+}	
+
+p
+{
+	text-align:justify;
+	}
+
+h1, h2, h3, h4, h5, h6 {color: #0066CB;}
+
+h1 {
+	font-size: 2.0em;
+	font-weight: normal;
+}
+
+.div-imagenes
+{
+	height: 246px;
+	width: 245px;
+	float:left;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	padding-right: 4px;
+	padding-bottom: 1px;
+}
+ 
+.logo
+{
+  	height:227px;
+	width:232px;
+    margin: 6px;
+}
+
+.div-menu
+{
+	height: 326px;
+	width: 245px;
+	float:left;
+	text-align: center;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	padding-right: 4px;
+	padding-bottom: 1px;
+}
+
+.div-menu-extras
+{
+	color:gray;
+	font-size:x-large;	
+	text-decoration:underline;
+	padding-top: 30px;
+	font-family: Tahoma;
+	}
+	
+.div-direccion
+{
+	height: 246px;
+  	width: 234px;
+  	float:left;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	padding-right: 4px;
+	padding-bottom: 1px;
+}
+
+.div-titulo
+{
+	padding-left:30px;
+	padding-top: 0px;
+}
+
+.div-subtitulo
+{
+	padding-left:30px;
+}
+
+.Titulo-celeste {
+	color: #0066CB;
+	text-align: left;
+	height: 42px;
+	width: 249px;
+}
+
+.div-direccion
+{
+	padding-left:0px;
+}
+
+.div-miselania
+{
+	height: 246px;
+  	width: 296px;
+  	float:left;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	padding-bottom: 1px;
+	padding-left:0px;
+}
+.body2 {
+    border-bottom: 2px solid #398235;
+    font-weight: bold;
+    padding-bottom: 7px;
+    margin: 2px auto;
+    width: 970px;
+}
+.main {
+    /* margin: 0 auto; */
+    width: 805px;
+}
+.bold{
+	font-weight:bold
+}
+
+.div-formulario
+{
+	border-style: none;
+	border-color: inherit;
+	border-width: 1px;
+	height: 327px;
+  	width: 553px;
+  	float: left;
+    border-bottom-style: solid;
+}
+
+.div-titulo-formulario
+{
+	padding-left:30px;
+}
+
+.div-cuerpo-formulario
+{
+	padding-left:30px;
+	width: 524px;
+	margin-top: -10px;
+	height: 106px;
+}
+
+.espacio
+{
+	padding-left : 10px
+}

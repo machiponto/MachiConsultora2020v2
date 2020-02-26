@@ -1,0 +1,225 @@
+﻿@model BIZ.Producto
+
+@{
+    ViewBag.Title = "Alta de Producto";
+}
+
+@using (Html.BeginForm("altaProducto", "ABM", FormMethod.Post, new { enctype = "multipart/form-data" })){
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+   <script src="~/Scripts/jquery-1.11.0.js"></script>
+    <script>
+        function codigo_valido(pCodigo) {
+            var serviceURL = '/ABM/verificarCodigo';
+
+            $.ajax({
+                type: "GET",
+                url: serviceURL,
+                data: { "pCodigo": pCodigo },
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data, status) {
+                    if (!data) {
+                        $("#codigo_error").css("display", "block");
+                        $("#codigo_valid").css("display", "none");
+                    } else {
+                        $("#codigo_valid").css("display", "block");
+                        $("#codigo_error").css("display", "none");
+                    }
+                },
+                error: function () {
+                    alert("Error");
+                }
+            });
+
+
+            return true;
+        }
+
+        function esNumero(numero) {
+            return !isNaN(numero);
+        }
+      
+        $(document).ready(function () {
+
+            $("#codigo").blur(function () {
+                if ($("#codigo").val().length > 0) {
+                    codigo_valido($("#codigo").val());
+                } else {
+                    $("#codigo_error").css("display", "block");
+                    $("#codigo_valid").css("display", "none");
+                }
+
+
+            });
+
+
+            $("#nombre").blur(function () {
+                if ($("#nombre").val().length > 1) {
+                    $("#nombre_valid").css("display", "block");
+                    $("#nombre_error").css("display", "none");
+                } else {
+                    $("#nombre_error").css("display", "block");
+                    $("#nombre_valid").css("display", "none");
+                }
+            });
+
+
+            $("#costoReal").blur(function () {
+                if (esNumero($("#costoReal").val()) && $("#costoReal").val().length > 0) {
+                    $("#costoReal_valid").css("display", "block");
+                    $("#costoReposicion_error").css("display", "none");
+                } else {
+                    $("#costoReposicion_error").css("display", "block");
+                    $("#costoReal_valid").css("display", "none");
+                }
+            });
+
+            $("#costoReposicion").blur(function () {
+                if (esNumero($("#costoReposicion").val()) && $("#costoReposicion").val().length > 0) {
+                    $("#costoReposicion_valid").css("display", "block");
+                    $("#costoReposicion_error").css("display", "none");
+                } else {
+                    $("#costoReposicion_error").css("display", "block");
+                    $("#costoReposicion_valid").css("display", "none");
+                }
+            });
+
+            
+
+            
+
+            
+
+        });
+        </script>
+    
+    <div class="container">
+        <div class="col-md-9">
+            <div class="bs-docs-section">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="page-header">
+                           @if (@ViewBag.mostrarMensaje == "OK")
+                           {           
+                            @*MENSAJE DE ALERTA AZUL*@
+                            <div class="alert alert-info alert-dismissible" role="alert">
+                                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                @ViewBag.mensaje
+                            </div>   
+                           }else if(@ViewBag.mostrarMensaje == "ERROR"){
+                               <div class="alert alert-danger alert-dismissible" role="alert">
+                                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                @ViewBag.mensaje
+                            </div>
+                           }else{
+                           
+                           }                            
+
+                            <h1 id="tables">@Session["NuevoProducto"]</h1>
+                        </div>
+                        <div class="bs-example">
+                            <table class="table table-striped table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            @Session["Campo"]
+                                        </th>
+                                        <th>
+                                            @Session["Valor"]
+                                        </th>
+                                    </tr>
+                                </thead>
+                                 <tbody>
+
+                                    <tr>
+                                        <td>
+                                            @Session["Codigo"] [CBL_XXXX]
+                                        </td>
+                                        <td>
+                                            <div style="float: left;">@Html.TextBoxFor(model => model.codigo)</div>
+                                            <img src="~/Content/images/valid.png" id="codigo_valid" style="display: none;" />
+                                            <img src="~/Content/images/error.png" id="codigo_error" style="display: none;" />
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            @Session["Categoria"]
+                                        </td>
+                                        <td>
+                                            @Html.DropDownList("categoriaProducto")
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            @Session["Detalle"]
+                                        </td>
+                                        <td>
+                                            @Html.TextArea("detalle", new { rows=10, columns=20 })
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            @Session["Ubicacion"]
+                                        </td>
+                                        <td>
+                                            @Html.EditorFor(model => model.ubicacion)
+                                            @Html.ValidationMessageFor(model => model.ubicacion)
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            @Session["UbicacionFoto"]
+                                        </td>
+                                        <td class="well">
+                                            <input type="file" id="fileToUpload" name="file" />
+                                            <span class="field-validation-error" id="spanfile"></span>
+                                            @Html.ValidationMessage("File")
+                                        </td>
+                                    </tr>
+
+                                     <tr>
+                                        <td>
+                                            @Session["CostoReal"]
+                                        </td>
+                                        <td>
+                                            <div style="float: left;">@Html.TextBoxFor(model => model.costoReal)</div>
+                                            <img src="~/Content/images/valid.png" id="costoReal_valid" style="display: none;" />
+                                            <img src="~/Content/images/error.png" id="costoReal_error" style="display: none;" />
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            @Session["CostoReposicion"]
+                                        </td>
+                                        <td>
+                                            <div style="float: left;">@Html.TextBoxFor(model => model.costoReposicion)</div>
+                                            <img src="~/Content/images/valid.png" id="costoReposicion_valid" style="display: none;" />
+                                            <img src="~/Content/images/error.png" id="costoReposicion_error" style="display: none;" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /example -->
+                    </div>
+                </div>
+            </div>
+
+            <button type="reset" class="btn btn-default">@Session["Cancelar"]</button>
+            <button type="submit" class="btn btn-primary">@Session["Guardar"]</button>
+
+        </div>
+    </div>
+
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,112 @@
+﻿@model BI.ClsBusqueda
+@{
+    ViewBag.Title = "Alta de Busqueda";
+    @(Html.BeginForm("altaBusqueda", "ABM", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+
+        <script src="~/Scripts/jquery-1.11.0.js"></script>
+         <div class="container">
+            <div class="col-md-9">
+                <div class="bs-docs-section">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="page-header">
+                                @if (@ViewBag.mostrarMensaje == "OK")
+                                {
+                                    @*MENSAJE DE ALERTA AZUL*@
+                                    <div class="alert alert-info alert-dismissible" role="alert">
+                                        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                        @ViewBag.mensaje
+                                    </div>
+                                }
+                                else if (@ViewBag.mostrarMensaje == "ERROR")
+                                {
+                                    <div class="alert alert-danger alert-dismissible" role="alert">
+                                        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                        @ViewBag.mensaje
+                                    </div>
+                                }
+                                else
+                                {
+
+                                }
+
+                                <h1 id="tables">@Session["NuevaBusqueda"]</h1>
+                            </div>
+                            <div class="bs-example">
+                                <table class="table table-striped table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                @Session["Campo"]
+                                            </th>
+                                            <th>
+                                                @Session["Valor"]
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <tr>
+                                            <td>
+                                                @Session["Referencia"] [MIP_XXXX]
+                                            </td>
+                                            <td>
+                                                <div style="float: left;">@Html.TextBoxFor(model => model.Referencia)</div>
+                                                <img src="~/Content/images/valid.png" id="codigo_valid" style="display: none;" />
+                                                <img src="~/Content/images/error.png" id="codigo_error" style="display: none;" />
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+
+                                            <td>
+                                                @Session["Puesto"]
+                                            </td>
+                                            <td>
+                                                <div style="float: left;">@Html.TextBoxFor(model => model.Id_Puesto)</div>
+                                                <img src="~/Content/images/valid.png" id="codigo_valid" style="display: none;" />
+                                                <img src="~/Content/images/error.png" id="codigo_error" style="display: none;" />
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                @Session["Descripcion"]
+                                            </td>
+                                            <td>
+                                                @Html.TextArea("Descripcion", new { rows = 15, columns = 40 })
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                @Session["Codigo"]
+                                            </td>
+                                            <td>
+                                                <div style="float: left;">@Html.TextBoxFor(model => model.Id_Busqueda)</div>
+                                                <img src="~/Content/images/valid.png" id="costoReal_valid" style="display: none;" />
+                                                <img src="~/Content/images/error.png" id="costoReal_error" style="display: none;" />
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /example -->
+                        </div>
+                    </div>
+                </div>
+
+                <button type="reset" class="btn btn-default">@Session["Cancelar"]</button>
+                <button type="submit" class="btn btn-primary">@Session["Guardar"]</button>
+            </div>
+        </div>
+
+    }
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }
+}

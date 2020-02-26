@@ -1,0 +1,32 @@
+﻿@model IEnumerable<BIZ.Producto>
+
+
+@if (Model != null)
+{
+    foreach (var item in Model)
+    {
+                <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="~/Content/productos/@Html.DisplayFor(modelItem => item.ubicacionFoto)" alt=""/>
+                            <div class="caption">
+                                <h4 class="pull-right">$@Html.DisplayFor(modelItem => item.costoPublico)</h4>
+                                <h4><a href="#">@Html.DisplayFor(modelItem => item.codigo)</a>                                </h4>
+                                
+                                @if(item.cantidad > 0){
+                                <span class="badge pull-right">
+                                    Stock: @Html.DisplayFor(modelItem => item.cantidad)
+                                </span>
+                                }else{
+                                <span class="badge alert-danger pull-right">
+                                    Stock: @Html.DisplayFor(modelItem => item.cantidad)
+                                </span>
+                                }
+                                
+                                <p>@Html.DisplayFor(modelItem => item.detalle)</p>
+                            </div>
+
+                        </div>
+                    </div>
+    }
+}
+ 

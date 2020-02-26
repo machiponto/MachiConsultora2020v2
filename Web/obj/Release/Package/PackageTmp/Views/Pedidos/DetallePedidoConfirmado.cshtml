@@ -1,0 +1,132 @@
+﻿@model Web.Models.PedidoNovedadesModel
+
+@{
+    ViewBag.Title = "Detalle de Pedido";
+}
+
+<div class="container">
+    <div class="col-md-9">
+
+        <h3 class="text-center">@Session["DetalleDePedido"]</h3>
+
+        <div class="bs-example text-center">
+            <table class="table table-striped table-bordered table-hover text-center">
+                <thead>
+                    <tr>
+                        <th class="text-center">
+                            @Session["idPedido"]
+                        </th>
+                        <th class="text-center">
+                            @Session["Fecha"]
+                        </th>
+                        <th class="text-center">
+                            @Session["Estado"]
+                        </th>
+                        <th class="text-center">
+                            @Session["PrecioTotal"]
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(model => model.oPedido.idPedido)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => model.oPedido.fecha.Day)/@Html.DisplayFor(model => model.oPedido.fecha.Month)/@Html.DisplayFor(model => model.oPedido.fecha.Year)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => model.oPedido.estado)
+                        </td>
+                        <td>
+                            $ @ViewBag.PrecioTotal
+                        </td>
+                </tbody>
+            </table>
+        </div>
+
+
+        <h3 class="text-center">@Session["DatosDeCliente"]</h3>
+
+
+        <div class="bs-example text-center">
+            <table class="table table-striped table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th class="text-center">
+                            @Session["Nombre"]
+                        </th>
+                        <th class="text-center">
+                            @Session["telefono"]
+                        </th>
+                        <th class="text-center">
+                            @Session["email"]
+                        </th>
+                        <th class="text-center">
+                            @Session["opcionDePago"]
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(model => model.oPedido.oCliente.nombre)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => model.oPedido.oCliente.telefono)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => model.oPedido.oCliente.email)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => model.oPedido.oCliente.opcionDePago.nombre)
+                        </td>
+                </tbody>
+            </table>
+        </div>
+
+
+
+        <h3 class="text-center">@Session["ListadoDeProductos"]</h3>
+
+        <div class="bs-example text-center">
+            <table class="table table-striped table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th class="text-center">
+                            @Session["Codigo"]
+                        </th>
+                        <th class="text-center">
+                            @Session["Categoria"]
+                        </th>
+                        <th class="text-center">
+                            @Session["CantidadProductos"]
+                        </th>
+                        <th class="text-center">
+                            @Session["PrecioTotal"]
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var _prod in Model.oPedido.listaProductos)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => _prod.codigo)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => _prod.categoria)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => _prod.cantidad)
+                            </td>
+                            <td>
+                                $ @Html.DisplayFor(modelItem => _prod.costoPublico)
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

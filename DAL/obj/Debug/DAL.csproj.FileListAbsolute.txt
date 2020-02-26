@@ -1,0 +1,30 @@
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\DAL\bin\Debug\DAL.dll.config
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\DAL\bin\Debug\DAL.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\DAL\bin\Debug\DAL.pdb
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\DAL\bin\Debug\BIZ.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\DAL\bin\Debug\ServiceLayer.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\DAL\bin\Debug\BIZ.pdb
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\DAL\bin\Debug\ServiceLayer.pdb
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\DAL\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\DAL\obj\Debug\DAL.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\DAL\obj\Debug\DAL.pdb
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Proyectos\MachiConsultora\DAL\bin\Debug\DAL.dll.config
+D:\Proyectos\MachiConsultora\DAL\bin\Debug\DAL.dll
+D:\Proyectos\MachiConsultora\DAL\bin\Debug\DAL.pdb
+D:\Proyectos\MachiConsultora\DAL\bin\Debug\BIZ.dll
+D:\Proyectos\MachiConsultora\DAL\bin\Debug\EntityFramework.dll
+D:\Proyectos\MachiConsultora\DAL\bin\Debug\ServiceLayer.dll
+D:\Proyectos\MachiConsultora\DAL\bin\Debug\BIZ.pdb
+D:\Proyectos\MachiConsultora\DAL\bin\Debug\ServiceLayer.pdb
+D:\Proyectos\MachiConsultora\DAL\bin\Debug\EntityFramework.xml
+D:\Proyectos\MachiConsultora\DAL\bin\Debug\es\EntityFramework.resources.dll
+D:\Proyectos\MachiConsultora\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\Proyectos\MachiConsultora\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Proyectos\MachiConsultora\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Proyectos\MachiConsultora\DAL\obj\Debug\DAL.dll
+D:\Proyectos\MachiConsultora\DAL\obj\Debug\DAL.pdb

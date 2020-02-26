@@ -1,0 +1,250 @@
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\Web.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\Web.pdb
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\es-AR\Web.resources.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\AntiXssLibrary.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\Antlr3.Runtime.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\BIZ.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\BLL.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\EntityFramework.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\HtmlSanitizationLibrary.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\Microsoft.Web.Mvc.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\ModelMetadataExtensions.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\Newtonsoft.Json.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\ServiceLayer.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\System.Net.Http.Formatting.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\System.Web.Http.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\System.Web.Http.WebHost.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\System.Web.Mvc.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\System.Web.Optimization.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\System.Web.Providers.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\System.Web.Razor.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\System.Web.WebPages.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\WebActivator.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\WebGrease.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\DAL.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\BIZ.pdb
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\BLL.pdb
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\ServiceLayer.pdb
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\AntiXssLibrary.xml
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\HtmlSanitizationLibrary.xml
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\EntityFramework.xml
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\Newtonsoft.Json.xml
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\System.Net.Http.Formatting.xml
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\System.Web.Http.xml
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\System.Web.Http.WebHost.xml
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\System.Web.Mvc.xml
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\System.Web.Razor.xml
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\System.Web.WebPages.xml
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\DAL.pdb
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\es\EntityFramework.resources.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\es\System.Web.Http.resources.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\es\System.Web.Providers.resources.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\es\System.Web.Razor.resources.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\obj\Debug\Web.csprojResolveAssemblyReference.cache
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\obj\Debug\Web.Resources.Language.resources
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\obj\Debug\Web.Resources.Language.es-AR.resources
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\obj\Debug\Web.csproj.GenerateResource.Cache
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\obj\Debug\es-AR\Web.resources.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\obj\Debug\Web.dll
+C:\Users\Navegador\Desktop\CBLAntenas - bkp02102014\CBLAntenas\Web\obj\Debug\Web.pdb
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\Web.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\Web.pdb
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\es-AR\Web.resources.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\AntiXssLibrary.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\Antlr3.Runtime.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\BIZ.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\BLL.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\EntityFramework.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\HtmlSanitizationLibrary.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\Microsoft.Web.Infrastructure.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\Microsoft.Web.Mvc.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\ModelMetadataExtensions.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\Newtonsoft.Json.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\Rotativa.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\ServiceLayer.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\System.Net.Http.Formatting.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\System.Web.Http.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\System.Web.Http.WebHost.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\System.Web.Mvc.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\System.Web.Optimization.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\System.Web.Providers.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\System.Web.Razor.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\System.Web.WebPages.Deployment.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\System.Web.WebPages.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\System.Web.WebPages.Razor.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\WebActivator.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\WebGrease.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\DAL.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\BIZ.pdb
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\BLL.pdb
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\ServiceLayer.pdb
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\AntiXssLibrary.xml
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\HtmlSanitizationLibrary.xml
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\EntityFramework.xml
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\Newtonsoft.Json.xml
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\System.Net.Http.Formatting.xml
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\System.Web.Http.xml
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\System.Web.Http.WebHost.xml
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\System.Web.Mvc.xml
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\System.Web.Razor.xml
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\System.Web.WebPages.xml
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\System.Web.WebPages.Deployment.xml
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\System.Web.WebPages.Razor.xml
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\DAL.pdb
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\es\EntityFramework.resources.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\es\System.Net.Http.Formatting.resources.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\es\System.Web.Http.resources.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\es\System.Web.Http.WebHost.resources.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\es\System.Web.Mvc.resources.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\es\System.Web.Optimization.resources.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\es\System.Web.Providers.resources.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\es\System.Web.Razor.resources.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\es\System.Web.WebPages.resources.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\obj\Debug\Web.csprojResolveAssemblyReference.cache
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\obj\Debug\Web.Resources.Language.resources
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\obj\Debug\Web.Resources.Language.es-AR.resources
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\obj\Debug\Web.csproj.GenerateResource.Cache
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\obj\Debug\es-AR\Web.resources.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\obj\Debug\Web.dll
+D:\Repo\CBLAntenas Source\CBLAntenas\Web\obj\Debug\Web.pdb
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\Web.dll
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\Web.pdb
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\es-AR\Web.resources.dll
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\AntiXssLibrary.dll
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\Antlr3.Runtime.dll
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\BIZ.dll
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\BLL.dll
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\EntityFramework.dll
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\HtmlSanitizationLibrary.dll
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\Microsoft.Web.Mvc.dll
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\ModelMetadataExtensions.dll
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\Newtonsoft.Json.dll
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\Rotativa.dll
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\ServiceLayer.dll
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\System.Web.Mvc.dll
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\System.Web.Optimization.dll
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\System.Web.Providers.dll
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\System.Web.Razor.dll
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\System.Web.WebPages.dll
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\WebActivator.dll
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\WebGrease.dll
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\DAL.dll
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\BIZ.pdb
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\BLL.pdb
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\ServiceLayer.pdb
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\AntiXssLibrary.xml
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\HtmlSanitizationLibrary.xml
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\EntityFramework.xml
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\Newtonsoft.Json.xml
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\System.Web.Mvc.xml
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\System.Web.Razor.xml
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\System.Web.WebPages.xml
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\DAL.pdb
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\es\EntityFramework.resources.dll
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\es\System.Web.Mvc.resources.dll
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\es\System.Web.Optimization.resources.dll
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\es\System.Web.Providers.resources.dll
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\es\System.Web.Razor.resources.dll
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\es\System.Web.WebPages.resources.dll
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\obj\Debug\Web.csprojResolveAssemblyReference.cache
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\obj\Debug\Web.Resources.Language.resources
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\obj\Debug\Web.Resources.Language.es-AR.resources
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\obj\Debug\Web.csproj.GenerateResource.Cache
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\obj\Debug\es-AR\Web.resources.dll
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\obj\Debug\Web.dll
+C:\Users\MACHI\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\obj\Debug\Web.pdb
+C:\Users\Maria Ines\Desktop\MCv2\MachiConsultora\Web\obj\Debug\Web.csprojResolveAssemblyReference.cache
+C:\Users\Maria Ines\Desktop\MCv2\MachiConsultora\Web\obj\Debug\Web.Resources.Language.resources
+C:\Users\Maria Ines\Desktop\MCv2\MachiConsultora\Web\obj\Debug\Web.Resources.Language.es-AR.resources
+C:\Users\Maria Ines\Desktop\MCv2\MachiConsultora\Web\obj\Debug\Web.csproj.GenerateResource.Cache
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\Web.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\Web.pdb
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\es-AR\Web.resources.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\AntiXssLibrary.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\Antlr3.Runtime.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\BIZ.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\BLL.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\EntityFramework.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\HtmlSanitizationLibrary.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\Microsoft.Web.Mvc.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\ModelMetadataExtensions.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\Newtonsoft.Json.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\Rotativa.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\ServiceLayer.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\System.Web.Mvc.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\System.Web.Optimization.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\System.Web.Providers.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\System.Web.Razor.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\System.Web.WebPages.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\WebActivator.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\WebGrease.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\DAL.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\BIZ.pdb
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\BLL.pdb
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\ServiceLayer.pdb
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\AntiXssLibrary.xml
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\HtmlSanitizationLibrary.xml
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\EntityFramework.xml
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\Newtonsoft.Json.xml
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\System.Web.Mvc.xml
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\System.Web.Razor.xml
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\System.Web.WebPages.xml
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\DAL.pdb
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\es\EntityFramework.resources.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\es\System.Web.Providers.resources.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\es\System.Web.Razor.resources.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\obj\Debug\Web.Resources.Language.resources
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\obj\Debug\Web.Resources.Language.es-AR.resources
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\obj\Debug\Web.csproj.GenerateResource.Cache
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\obj\Debug\es-AR\Web.resources.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\obj\Debug\Web.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\obj\Debug\Web.pdb
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\Web.dll.config
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\System.Net.Http.Formatting.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\System.Web.Http.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\System.Web.Http.WebHost.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\System.Net.Http.Formatting.xml
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\System.Web.Http.xml
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\System.Web.Http.WebHost.xml
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\es\System.Web.Http.resources.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\bin\DAL.dll.config
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\obj\Debug\Web.csprojAssemblyReference.cache
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\obj\Debug\Web.csproj.CoreCompileInputs.cache
+C:\Users\Maria Ines\Documents\Visual Studio 2012\Projects\MachiConsultora\Web\obj\Debug\Web.csproj.CopyComplete

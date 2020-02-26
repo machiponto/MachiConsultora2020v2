@@ -1,0 +1,98 @@
+﻿@model IEnumerable<BIZ.Factura>
+
+@{
+    ViewBag.Title = "listadoFacturas";
+    int resultado = 0;
+}
+
+<div class="bs-docs-section">
+
+    <div class="row">
+        <div class="col-lg-8">
+
+            <div class="row">
+
+                <h2>@Session["ListadoFacturas"]</h2>
+                
+            </div>
+
+            <div class="bs-example text-center">
+                <table class="table table-striped table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th class="text-center">
+                                Id
+                            </th>
+                            <th class="text-center">
+                                @Session["Letra"]
+                            </th>
+                            <th class="text-center">
+                                @Session["Numero"]
+                            </th>
+                            <th class="text-center">
+                                @Session["Fecha"]
+                            </th>
+                            <th class="text-center">
+                                @Session["Tipo"]
+                            </th>
+                            <th class="text-center">
+                                @Session["CantidadProductos"]
+                            </th>
+                            <th class="text-center">
+                                @Session["MontoTotal"]
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.idFactura)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.letra)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.numero)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.fecha.Day)/@Html.DisplayFor(modelItem => item.fecha.Month)/@Html.DisplayFor(modelItem => item.fecha.Year)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.tipo)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.listaProductos.Count)
+                                </td>
+                                <td>
+                                    @foreach (var prod in item.listaProductos)
+                                    {
+
+                                        resultado = resultado + (int)prod.costoPublico;
+                                    }
+                                    $ @resultado
+
+                                </td>
+                                <td>
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li class="dropdown">
+                                            <a class="dropdown-toggle" data-toggle="dropdown">Opciones <b class="caret"></b></a>
+                                            <ul class="dropdown-menu">
+                                                <li>@Html.ActionLink("Ver Factura", "Factura", new { pIdFactura = item.idFactura })</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            
+                            if (resultado != 0) {
+                                resultado = 0;
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

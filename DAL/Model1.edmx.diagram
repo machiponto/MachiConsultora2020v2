@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4f195e50aa8d4ab7945466252fc7653c" Name="Diagrama1" ZoomLevel="133">
+        <EntityTypeShape EntityType="MachiConsultoraVFModel.Bitacora" Width="1.5" PointX="0.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MachiConsultoraVFModel.Busqueda" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MachiConsultoraVFModel.campos" Width="1.5" PointX="2.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MachiConsultoraVFModel.CategoriaServicio" Width="1.5" PointX="13" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MachiConsultoraVFModel.Cliente" Width="1.5" PointX="7.5" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MachiConsultoraVFModel.ComprobanteCabecera" Width="1.5" PointX="15.25" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MachiConsultoraVFModel.ComprobanteDetalle" Width="1.5" PointX="17.5" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MachiConsultoraVFModel.CV" Width="1.5" PointX="10.5" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MachiConsultoraVFModel.DatosPersonales" Width="1.5" PointX="8.25" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MachiConsultoraVFModel.Empresa" Width="1.5" PointX="10.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MachiConsultoraVFModel.Estados" Width="1.5" PointX="4.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MachiConsultoraVFModel.EstudiosFormales" Width="1.5" PointX="8.25" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="MachiConsultoraVFModel.Grupo" Width="1.5" PointX="3" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MachiConsultoraVFModel.Idioma" Width="1.5" PointX="5.25" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MachiConsultoraVFModel.LocalidadBarrio" Width="1.5" PointX="14.25" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MachiConsultoraVFModel.Modulo" Width="1.5" PointX="0.75" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MachiConsultoraVFModel.Municipio" Width="1.5" PointX="12" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MachiConsultoraVFModel.NivelManejo" Width="1.5" PointX="5.25" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MachiConsultoraVFModel.Permiso" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MachiConsultoraVFModel.PostulanteIdioma" Width="1.5" PointX="7.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MachiConsultoraVFModel.Provincia" Width="1.5" PointX="9.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MachiConsultoraVFModel.Puestos" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MachiConsultoraVFModel.Servicio" Width="1.5" PointX="15.25" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MachiConsultoraVFModel.Sucursal" Width="1.5" PointX="13" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MachiConsultoraVFModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MachiConsultoraVFModel.TipoComprobante" Width="1.5" PointX="13" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MachiConsultoraVFModel.Usuario" Width="1.5" PointX="5.25" PointY="4.5" IsExpanded="true" />
+        <AssociationConnector Association="MachiConsultoraVFModel.FK_Busqueda_Puestos" ManuallyRouted="false" />
+        <AssociationConnector Association="MachiConsultoraVFModel.FK_Servicio_CategoriaServicio" ManuallyRouted="false" />
+        <AssociationConnector Association="MachiConsultoraVFModel.FK_Cliente_Usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="MachiConsultoraVFModel.FK_ComprobanteCabecera_Sucursal" ManuallyRouted="false" />
+        <AssociationConnector Association="MachiConsultoraVFModel.FK_ComprobanteCabecera_TipoComprobante" ManuallyRouted="false" />
+        <AssociationConnector Association="MachiConsultoraVFModel.FK_ComprobanteDetalle_ComprobanteCabecera" ManuallyRouted="false" />
+        <AssociationConnector Association="MachiConsultoraVFModel.FK_ComprobanteDetalle_Servicio" ManuallyRouted="false" />
+        <AssociationConnector Association="MachiConsultoraVFModel.FK_CV_DatosPersonales" ManuallyRouted="false" />
+        <AssociationConnector Association="MachiConsultoraVFModel.FK_CV_EstudiosFormales" ManuallyRouted="false" />
+        <AssociationConnector Association="MachiConsultoraVFModel.FK_CV_Usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="MachiConsultoraVFModel.FK_Sucursal_Empresa" ManuallyRouted="false" />
+        <AssociationConnector Association="MachiConsultoraVFModel.FK_PostulanteIdioma_Idioma" ManuallyRouted="false" />
+        <AssociationConnector Association="MachiConsultoraVFModel.FK__Localidad__Id_Mu__5535A963" ManuallyRouted="false" />
+        <AssociationConnector Association="MachiConsultoraVFModel.FK__Municipio__Id_Pr__5812160E" ManuallyRouted="false" />
+        <AssociationConnector Association="MachiConsultoraVFModel.FK_PostulanteIdioma_NivelManejo" ManuallyRouted="false" />
+        <AssociationConnector Association="MachiConsultoraVFModel.FK_PostulanteIdioma_Usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="MachiConsultoraVFModel.GrupoUsuario" ManuallyRouted="false" />
+        <AssociationConnector Association="MachiConsultoraVFModel.UsuarioBusqueda" ManuallyRouted="false" />
+        <AssociationConnector Association="MachiConsultoraVFModel.UsuarioPermiso" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

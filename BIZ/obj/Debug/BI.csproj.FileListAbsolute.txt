@@ -1,0 +1,5 @@
+D:\Proyectos\MachiConsultora\BIZ\bin\Debug\BIZ.dll
+D:\Proyectos\MachiConsultora\BIZ\bin\Debug\BIZ.pdb
+D:\Proyectos\MachiConsultora\BIZ\obj\Debug\BI.csproj.CoreCompileInputs.cache
+D:\Proyectos\MachiConsultora\BIZ\obj\Debug\BIZ.dll
+D:\Proyectos\MachiConsultora\BIZ\obj\Debug\BIZ.pdb

@@ -1,0 +1,35 @@
+﻿@model IEnumerable<BIZ.Producto>
+
+@if (Model != null)
+{
+    foreach (var item in Model)
+    {
+                <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="~/Content/productos/@Html.DisplayFor(modelItem => item.ubicacionFoto)" alt=""/>
+                            <div class="caption">
+                                <h4 class="pull-right">$@Html.DisplayFor(modelItem => item.costoPublico)</h4>
+                                <h4><a href="#">@Html.DisplayFor(modelItem => item.codigo)</a></h4>
+                                <p>@Html.DisplayFor(modelItem => item.detalle)</p>
+                            </div>
+                                                        
+                            <form action="/Carrito/borrarProducto" method="post">
+                            <input type="hidden" name="idItem" value="@item.idItem" />
+                            <input type="hidden" name="tipo" value="@item.tipo" />
+                            <input type="hidden" name="codigo" value="@item.codigo" />
+                            <input type="hidden" name="categoria" value="@item.categoria" />
+                            <input type="hidden" name="detalle" value="@item.detalle" />
+                            <input type="hidden" name="ubicacion" value="@item.ubicacion" />
+                            <input type="hidden" name="ubicacionFoto" value="@item.ubicacionFoto" />
+                            <input type="hidden" name="costoReal" value="@item.costoReal" />
+                            <input type="hidden" name="costoReposicion" value="@item.costoReposicion" />
+                            <input type="hidden" name="costoPublico" value="@item.costoPublico" />
+                            <input type="submit" value="Borrar" class="btn btn-primary" />
+                                                   
+                            </form>
+
+                        </div>
+                    </div>
+     }
+}
+ 

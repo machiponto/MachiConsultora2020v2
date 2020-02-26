@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="altaCliente" xml:space="preserve">
+    <value>New Cliente</value>
+  </data>
+  <data name="Campo" xml:space="preserve">
+    <value>Field</value>
+  </data>
+  <data name="Cancelar" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Contrasena" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="direccion" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Guardar" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="MateriaPrima" xml:space="preserve">
+    <value>Feedstock</value>
+  </data>
+  <data name="Nombre" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NuevaMatPrima" xml:space="preserve">
+    <value>New Feedstock</value>
+  </data>
+  <data name="NuevoProducto" xml:space="preserve">
+    <value>New Product</value>
+  </data>
+  <data name="Productos" xml:space="preserve">
+    <value>Products</value>
+  </data>
+  <data name="Secciones" xml:space="preserve">
+    <value>Sections</value>
+  </data>
+  <data name="telefono" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="Valor" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="Accesorios" xml:space="preserve">
+    <value>Accesories</value>
+  </data>
+  <data name="Administracion" xml:space="preserve">
+    <value>Administration</value>
+  </data>
+  <data name="AdminPerfil" xml:space="preserve">
+    <value>Admin Profile</value>
+  </data>
+  <data name="Novedades" xml:space="preserve">
+    <value>News</value>
+  </data>
+  <data name="Promociones" xml:space="preserve">
+    <value>Promotions</value>
+  </data>
+  <data name="Rotores" xml:space="preserve">
+    <value>Rotors</value>
+  </data>
+  <data name="Torres" xml:space="preserve">
+    <value>Towers</value>
+  </data>
+  <data name="Registrarse" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="IniciarSesion" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="AltaCV" xml:space="preserve">
+    <value>AltaCV</value>
+  </data>
+  <data name="ConfirmarContrasena" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="Ingresar" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Welcome, enter your credentials</value>
+  </data>
+  <data name="MontoTotal" xml:space="preserve">
+    <value>Total Amount</value>
+  </data>
+  <data name="Carrito" xml:space="preserve">
+    <value>Cart</value>
+  </data>
+  <data name="CerrarSesion" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="ListadoPedidos" xml:space="preserve">
+    <value>List of Orders</value>
+  </data>
+  <data name="Pedidos" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="CantidadProductos" xml:space="preserve">
+    <value>Prod. Cuantity</value>
+  </data>
+  <data name="Estado" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="Fecha" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="NombreCliente" xml:space="preserve">
+    <value>Client</value>
+  </data>
+  <data name="NroPedido" xml:space="preserve">
+    <value>Order Nmb</value>
+  </data>
+  <data name="efectivo" xml:space="preserve">
+    <value>Cash</value>
+  </data>
+  <data name="transferencia" xml:space="preserve">
+    <value>Transference</value>
+  </data>
+  <data name="medioDePago" xml:space="preserve">
+    <value>Payment Type</value>
+  </data>
+  <data name="Activo" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="Categoria" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="Codigo" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="CostoPublico" xml:space="preserve">
+    <value>Money</value>
+  </data>
+  <data name="DatosDeCliente" xml:space="preserve">
+    <value>Client Data</value>
+  </data>
+  <data name="Descripcion" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Descuento" xml:space="preserve">
+    <value>Discount</value>
+  </data>
+  <data name="DetalleDePedido" xml:space="preserve">
+    <value>Request Detail</value>
+  </data>
+  <data name="FechaGeneracion" xml:space="preserve">
+    <value>Generated Date</value>
+  </data>
+  <data name="idPedido" xml:space="preserve">
+    <value>Request ID</value>
+  </data>
+  <data name="IDPromocion" xml:space="preserve">
+    <value>Promo ID</value>
+  </data>
+  <data name="ListadoDeProductos" xml:space="preserve">
+    <value>Product List</value>
+  </data>
+  <data name="ListadoDePromociones" xml:space="preserve">
+    <value>Promotion List</value>
+  </data>
+  <data name="opcionDePago" xml:space="preserve">
+    <value>Buy option</value>
+  </data>
+  <data name="PrecioTotal" xml:space="preserve">
+    <value>Total Prize</value>
+  </data>
+  <data name="ListadoDePedidos" xml:space="preserve">
+    <value>Orders List</value>
+  </data>
+  <data name="ListadoPedidosAConfirmar" xml:space="preserve">
+    <value>To Confirm</value>
+  </data>
+  <data name="Buscar" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="ListadoPedidosCancelados" xml:space="preserve">
+    <value>Canceled</value>
+  </data>
+  <data name="ListadoPedidosConfirmados" xml:space="preserve">
+    <value>Confirmed</value>
+  </data>
+  <data name="Factura" xml:space="preserve">
+    <value>Bill</value>
+  </data>
+  <data name="Facturacion" xml:space="preserve">
+    <value>Billing</value>
+  </data>
+  <data name="Bitacora" xml:space="preserve">
+    <value>Log</value>
+  </data>
+  <data name="AltaEmpleado" xml:space="preserve">
+    <value>New Employee</value>
+  </data>
+  <data name="fechaNacimiento" xml:space="preserve">
+    <value>Birthday</value>
+  </data>
+  <data name="legajo" xml:space="preserve">
+    <value>Docket</value>
+  </data>
+  <data name="puesto" xml:space="preserve">
+    <value>Post</value>
+  </data>
+  <data name="listadoProduccion" xml:space="preserve">
+    <value>Production List</value>
+  </data>
+  <data name="Detalle" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="Modulo" xml:space="preserve">
+    <value>Module</value>
+  </data>
+  <data name="Tipo" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="GenerarProduccion" xml:space="preserve">
+    <value>Production Generator</value>
+  </data>
+  <data name="Imagen" xml:space="preserve">
+    <value>Image</value>
+  </data>
+  <data name="Cantidad" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="Generar" xml:space="preserve">
+    <value>Generate</value>
+  </data>
+  <data name="ListadoProductosVigentes" xml:space="preserve">
+    <value>Available Products</value>
+  </data>
+  <data name="CostoReal" xml:space="preserve">
+    <value>Real Cost</value>
+  </data>
+  <data name="CostoReposicion" xml:space="preserve">
+    <value>Reposition Cost</value>
+  </data>
+  <data name="Ubicacion" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="UbicacionFoto" xml:space="preserve">
+    <value>Picture Location</value>
+  </data>
+  <data name="ListadoDePedidosAConfirmar" xml:space="preserve">
+    <value>Confirmed Order List</value>
+  </data>
+  <data name="ListadoDePedidosCancelados" xml:space="preserve">
+    <value>Canceled Order List</value>
+  </data>
+  <data name="ListadoDePedidosFinalizados" xml:space="preserve">
+    <value>Finished Order List</value>
+  </data>
+  <data name="Confirmados" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="StockConfirmado" xml:space="preserve">
+    <value>Stock</value>
+  </data>
+  <data name="Cliente" xml:space="preserve">
+    <value>Client</value>
+  </data>
+  <data name="Sucursal" xml:space="preserve">
+    <value>Branch Office</value>
+  </data>
+  <data name="ListadoFactura" xml:space="preserve">
+    <value>Bill List</value>
+  </data>
+  <data name="Letra" xml:space="preserve">
+    <value>Letter</value>
+  </data>
+  <data name="Numero" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="CostoConDescuento" xml:space="preserve">
+    <value>Discount Cost</value>
+  </data>
+  <data name="DatosPersonales" xml:space="preserve">
+    <value>Date Person</value>
+  </data>
+  <data name="EstudiosFormales" xml:space="preserve">
+    <value>Study</value>
+  </data>
+  <data name="Modulos" xml:space="preserve">
+    <value>Module</value>
+  </data>
+  <data name="ExperienciaLaboral" xml:space="preserve">
+    <value>work experience</value>
+  </data>
+  <data name="Busqueda" xml:space="preserve">
+    <value>Searching</value>
+  </data>
+  <data name="Consultor" xml:space="preserve">
+    <value>Consulting</value>
+  </data>
+  <data name="Busquedas" xml:space="preserve">
+    <value>Searching</value>
+  </data>
+  <data name="FechaPublicacion" xml:space="preserve">
+    <value>Publication Date</value>
+  </data>
+  <data name="Referencia" xml:space="preserve">
+    <value>Reference</value>
+  </data>
+  <data name="NuevaBusqueda" xml:space="preserve">
+    <value>New Search</value>
+  </data>
+  <data name="Id_Busqueda" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="evaluarPostulantes" xml:space="preserve">
+    <value>Evaluate Applicants</value>
+  </data>
+  <data name="Postulantes" xml:space="preserve">
+    <value>Applicants</value>
+  </data>
+  <data name="Avisos" xml:space="preserve">
+    <value>Notices</value>
+  </data>
+  <data name="Campanias" xml:space="preserve">
+    <value>Bells</value>
+  </data>
+  <data name="Backup" xml:space="preserve">
+    <value>Backup</value>
+  </data>
+  <data name="Restore" xml:space="preserve">
+    <value>Restore DB</value>
+  </data>
+  <data name="Postulante" xml:space="preserve">
+    <value>Aplicant</value>
+  </data>
+  <data name="PostulantesporBusqueda" xml:space="preserve">
+    <value>Aplicant fro Searchung</value>
+  </data>
+</root>

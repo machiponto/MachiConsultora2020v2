@@ -1,0 +1,672 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MachiConsultoraVFModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="MachiConsultoraVFEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Bitacora" EntityType="MachiConsultoraVFModel.Bitacora" />
+    <EntitySet Name="Busqueda" EntityType="MachiConsultoraVFModel.Busqueda" />
+    <EntitySet Name="campos" EntityType="MachiConsultoraVFModel.campos" />
+    <EntitySet Name="CategoriaServicio" EntityType="MachiConsultoraVFModel.CategoriaServicio" />
+    <EntitySet Name="Cliente" EntityType="MachiConsultoraVFModel.Cliente" />
+    <EntitySet Name="ComprobanteCabecera" EntityType="MachiConsultoraVFModel.ComprobanteCabecera" />
+    <EntitySet Name="ComprobanteDetalle" EntityType="MachiConsultoraVFModel.ComprobanteDetalle" />
+    <EntitySet Name="CV" EntityType="MachiConsultoraVFModel.CV" />
+    <EntitySet Name="DatosPersonales" EntityType="MachiConsultoraVFModel.DatosPersonales" />
+    <EntitySet Name="Empresa" EntityType="MachiConsultoraVFModel.Empresa" />
+    <EntitySet Name="Estados" EntityType="MachiConsultoraVFModel.Estados" />
+    <EntitySet Name="EstudiosFormales" EntityType="MachiConsultoraVFModel.EstudiosFormales" />
+    <EntitySet Name="Grupo" EntityType="MachiConsultoraVFModel.Grupo" />
+    <EntitySet Name="Idioma" EntityType="MachiConsultoraVFModel.Idioma" />
+    <EntitySet Name="LocalidadBarrio" EntityType="MachiConsultoraVFModel.LocalidadBarrio" />
+    <EntitySet Name="Modulo" EntityType="MachiConsultoraVFModel.Modulo" />
+    <EntitySet Name="Municipio" EntityType="MachiConsultoraVFModel.Municipio" />
+    <EntitySet Name="NivelManejo" EntityType="MachiConsultoraVFModel.NivelManejo" />
+    <EntitySet Name="Permiso" EntityType="MachiConsultoraVFModel.Permiso" />
+    <EntitySet Name="PostulanteIdioma" EntityType="MachiConsultoraVFModel.PostulanteIdioma" />
+    <EntitySet Name="Provincia" EntityType="MachiConsultoraVFModel.Provincia" />
+    <EntitySet Name="Puestos" EntityType="MachiConsultoraVFModel.Puestos" />
+    <EntitySet Name="Servicio" EntityType="MachiConsultoraVFModel.Servicio" />
+    <EntitySet Name="Sucursal" EntityType="MachiConsultoraVFModel.Sucursal" />
+    <EntitySet Name="sysdiagrams" EntityType="MachiConsultoraVFModel.sysdiagrams" />
+    <EntitySet Name="TipoComprobante" EntityType="MachiConsultoraVFModel.TipoComprobante" />
+    <EntitySet Name="Usuario" EntityType="MachiConsultoraVFModel.Usuario" />
+    <AssociationSet Name="FK_Busqueda_Puestos" Association="MachiConsultoraVFModel.FK_Busqueda_Puestos">
+      <End Role="Puestos" EntitySet="Puestos" />
+      <End Role="Busqueda" EntitySet="Busqueda" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Servicio_CategoriaServicio" Association="MachiConsultoraVFModel.FK_Servicio_CategoriaServicio">
+      <End Role="CategoriaServicio" EntitySet="CategoriaServicio" />
+      <End Role="Servicio" EntitySet="Servicio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Cliente_Usuario" Association="MachiConsultoraVFModel.FK_Cliente_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Cliente" EntitySet="Cliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ComprobanteCabecera_Sucursal" Association="MachiConsultoraVFModel.FK_ComprobanteCabecera_Sucursal">
+      <End Role="Sucursal" EntitySet="Sucursal" />
+      <End Role="ComprobanteCabecera" EntitySet="ComprobanteCabecera" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ComprobanteCabecera_TipoComprobante" Association="MachiConsultoraVFModel.FK_ComprobanteCabecera_TipoComprobante">
+      <End Role="TipoComprobante" EntitySet="TipoComprobante" />
+      <End Role="ComprobanteCabecera" EntitySet="ComprobanteCabecera" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ComprobanteDetalle_ComprobanteCabecera" Association="MachiConsultoraVFModel.FK_ComprobanteDetalle_ComprobanteCabecera">
+      <End Role="ComprobanteCabecera" EntitySet="ComprobanteCabecera" />
+      <End Role="ComprobanteDetalle" EntitySet="ComprobanteDetalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ComprobanteDetalle_Servicio" Association="MachiConsultoraVFModel.FK_ComprobanteDetalle_Servicio">
+      <End Role="Servicio" EntitySet="Servicio" />
+      <End Role="ComprobanteDetalle" EntitySet="ComprobanteDetalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CV_DatosPersonales" Association="MachiConsultoraVFModel.FK_CV_DatosPersonales">
+      <End Role="DatosPersonales" EntitySet="DatosPersonales" />
+      <End Role="CV" EntitySet="CV" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CV_EstudiosFormales" Association="MachiConsultoraVFModel.FK_CV_EstudiosFormales">
+      <End Role="EstudiosFormales" EntitySet="EstudiosFormales" />
+      <End Role="CV" EntitySet="CV" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CV_Usuario" Association="MachiConsultoraVFModel.FK_CV_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="CV" EntitySet="CV" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sucursal_Empresa" Association="MachiConsultoraVFModel.FK_Sucursal_Empresa">
+      <End Role="Empresa" EntitySet="Empresa" />
+      <End Role="Sucursal" EntitySet="Sucursal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PostulanteIdioma_Idioma" Association="MachiConsultoraVFModel.FK_PostulanteIdioma_Idioma">
+      <End Role="Idioma" EntitySet="Idioma" />
+      <End Role="PostulanteIdioma" EntitySet="PostulanteIdioma" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Localidad__Id_Mu__5535A963" Association="MachiConsultoraVFModel.FK__Localidad__Id_Mu__5535A963">
+      <End Role="Municipio" EntitySet="Municipio" />
+      <End Role="LocalidadBarrio" EntitySet="LocalidadBarrio" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Municipio__Id_Pr__5812160E" Association="MachiConsultoraVFModel.FK__Municipio__Id_Pr__5812160E">
+      <End Role="Provincia" EntitySet="Provincia" />
+      <End Role="Municipio" EntitySet="Municipio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PostulanteIdioma_NivelManejo" Association="MachiConsultoraVFModel.FK_PostulanteIdioma_NivelManejo">
+      <End Role="NivelManejo" EntitySet="NivelManejo" />
+      <End Role="PostulanteIdioma" EntitySet="PostulanteIdioma" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PostulanteIdioma_Usuario" Association="MachiConsultoraVFModel.FK_PostulanteIdioma_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="PostulanteIdioma" EntitySet="PostulanteIdioma" />
+    </AssociationSet>
+    <AssociationSet Name="GrupoUsuario" Association="MachiConsultoraVFModel.GrupoUsuario">
+      <End Role="Grupo" EntitySet="Grupo" />
+      <End Role="Usuario" EntitySet="Usuario" />
+    </AssociationSet>
+    <AssociationSet Name="UsuarioBusqueda" Association="MachiConsultoraVFModel.UsuarioBusqueda">
+      <End Role="Busqueda" EntitySet="Busqueda" />
+      <End Role="Usuario" EntitySet="Usuario" />
+    </AssociationSet>
+    <AssociationSet Name="UsuarioPermiso" Association="MachiConsultoraVFModel.UsuarioPermiso">
+      <End Role="Permiso" EntitySet="Permiso" />
+      <End Role="Usuario" EntitySet="Usuario" />
+    </AssociationSet>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(MachiConsultoraVFModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(MachiConsultoraVFModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+    <FunctionImport Name="SPBuscarEventosBitacora" ReturnType="Collection(MachiConsultoraVFModel.SPBuscarEventosBitacora_Result)">
+      <Parameter Name="pIdBitacora" Mode="In" Type="Int32" />
+      <Parameter Name="pModulo" Mode="In" Type="String" />
+      <Parameter Name="pTipo" Mode="In" Type="String" />
+      <Parameter Name="pDetalle" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <EntityType Name="Bitacora">
+    <Key>
+      <PropertyRef Name="idBitacora" />
+    </Key>
+    <Property Name="idBitacora" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Modulo" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Tipo" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Detalle" Type="String" Nullable="false" MaxLength="2000" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Busqueda">
+    <Key>
+      <PropertyRef Name="Id_Busqueda" />
+    </Key>
+    <Property Name="Id_Busqueda" Type="Int32" Nullable="false" />
+    <Property Name="FechaPublicacion" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Id_Puesto" Type="Int32" Nullable="false" />
+    <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="1500" Unicode="false" FixedLength="false" />
+    <Property Name="Referencia" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="Activa" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Puestos" Relationship="MachiConsultoraVFModel.FK_Busqueda_Puestos" FromRole="Busqueda" ToRole="Puestos" />
+    <NavigationProperty Name="Usuario" Relationship="MachiConsultoraVFModel.UsuarioBusqueda" FromRole="Busqueda" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="campos">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="tipo" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="CategoriaServicio">
+    <Key>
+      <PropertyRef Name="Id_CategoriaServicio" />
+    </Key>
+    <Property Name="Id_CategoriaServicio" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Imagen" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Servicio" Relationship="MachiConsultoraVFModel.FK_Servicio_CategoriaServicio" FromRole="CategoriaServicio" ToRole="Servicio" />
+  </EntityType>
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="Id_Cliente" />
+    </Key>
+    <Property Name="Id_Cliente" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Direccion" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="Mail" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Telefono" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="idUsuario" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Usuario" Relationship="MachiConsultoraVFModel.FK_Cliente_Usuario" FromRole="Cliente" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="ComprobanteCabecera">
+    <Key>
+      <PropertyRef Name="idComprobanteCabecera" />
+    </Key>
+    <Property Name="idComprobanteCabecera" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="letra" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="numero" Type="Int32" Nullable="false" />
+    <Property Name="fecha" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="tipoComprobante" Type="Int32" Nullable="false" />
+    <Property Name="idCliente" Type="Int32" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="idSucursal" Type="Int32" />
+    <NavigationProperty Name="Sucursal" Relationship="MachiConsultoraVFModel.FK_ComprobanteCabecera_Sucursal" FromRole="ComprobanteCabecera" ToRole="Sucursal" />
+    <NavigationProperty Name="TipoComprobante1" Relationship="MachiConsultoraVFModel.FK_ComprobanteCabecera_TipoComprobante" FromRole="ComprobanteCabecera" ToRole="TipoComprobante" />
+    <NavigationProperty Name="ComprobanteDetalle" Relationship="MachiConsultoraVFModel.FK_ComprobanteDetalle_ComprobanteCabecera" FromRole="ComprobanteCabecera" ToRole="ComprobanteDetalle" />
+  </EntityType>
+  <EntityType Name="ComprobanteDetalle">
+    <Key>
+      <PropertyRef Name="idComprobanteDetalle" />
+    </Key>
+    <Property Name="idComprobanteDetalle" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="idComprobanteCabecera" Type="Int32" Nullable="false" />
+    <Property Name="detalle" Type="String" MaxLength="2000" Unicode="false" FixedLength="false" />
+    <Property Name="Id_Servicio" Type="Int32" Nullable="false" />
+    <Property Name="cantidad" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ComprobanteCabecera" Relationship="MachiConsultoraVFModel.FK_ComprobanteDetalle_ComprobanteCabecera" FromRole="ComprobanteDetalle" ToRole="ComprobanteCabecera" />
+    <NavigationProperty Name="Servicio" Relationship="MachiConsultoraVFModel.FK_ComprobanteDetalle_Servicio" FromRole="ComprobanteDetalle" ToRole="Servicio" />
+  </EntityType>
+  <EntityType Name="CV">
+    <Key>
+      <PropertyRef Name="Id_CV" />
+    </Key>
+    <Property Name="Id_CV" Type="Int32" Nullable="false" />
+    <Property Name="idUsuario" Type="Int32" Nullable="false" />
+    <Property Name="Id_DatosPersonales" Type="Int32" Nullable="false" />
+    <Property Name="Id_EstudiosFormales" Type="Int32" Nullable="false" />
+    <Property Name="Id_ModuloComposicion" Type="Int32" Nullable="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="DatosPersonales" Relationship="MachiConsultoraVFModel.FK_CV_DatosPersonales" FromRole="CV" ToRole="DatosPersonales" />
+    <NavigationProperty Name="EstudiosFormales" Relationship="MachiConsultoraVFModel.FK_CV_EstudiosFormales" FromRole="CV" ToRole="EstudiosFormales" />
+    <NavigationProperty Name="Usuario" Relationship="MachiConsultoraVFModel.FK_CV_Usuario" FromRole="CV" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="DatosPersonales">
+    <Key>
+      <PropertyRef Name="Id_DatosPersonales" />
+    </Key>
+    <Property Name="Id_DatosPersonales" Type="Int32" Nullable="false" />
+    <Property Name="ApellidoPostulante" Type="String" Nullable="false" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="ApellidoMaterno" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="NombrePostulante" Type="String" Nullable="false" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="Sexo" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="FechaNacimiento" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Direccion" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="Numero" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Piso" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Dto" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="CodPostal" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="email" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="CantidadHijos" Type="Int32" />
+    <Property Name="Observaciones" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="CV" Relationship="MachiConsultoraVFModel.FK_CV_DatosPersonales" FromRole="DatosPersonales" ToRole="CV" />
+  </EntityType>
+  <EntityType Name="Empresa">
+    <Key>
+      <PropertyRef Name="idEmpresa" />
+    </Key>
+    <Property Name="idEmpresa" Type="Int32" Nullable="false" />
+    <Property Name="RazonSocial" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Sucursal" Relationship="MachiConsultoraVFModel.FK_Sucursal_Empresa" FromRole="Empresa" ToRole="Sucursal" />
+  </EntityType>
+  <EntityType Name="Estados">
+    <Key>
+      <PropertyRef Name="Id_Estado" />
+    </Key>
+    <Property Name="Id_Estado" Type="Int32" Nullable="false" />
+    <Property Name="DescripcionEstado" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="Habilitado" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="EstIT" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="EstFecha" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="EstHora" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="EstUsuario" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="EstudiosFormales">
+    <Key>
+      <PropertyRef Name="Id_EstudiosFormales" />
+    </Key>
+    <Property Name="Id_EstudiosFormales" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Nivel" Type="String" Nullable="false" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="Institucion" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="Titulo" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="PorcAvance" Type="Int32" Nullable="false" />
+    <Property Name="PeriodoDesde" Type="Int32" Nullable="false" />
+    <Property Name="PeriodoHasta" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CV" Relationship="MachiConsultoraVFModel.FK_CV_EstudiosFormales" FromRole="EstudiosFormales" ToRole="CV" />
+  </EntityType>
+  <EntityType Name="Grupo">
+    <Key>
+      <PropertyRef Name="idGrupo" />
+    </Key>
+    <Property Name="idGrupo" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="CodigoGrupo" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Detalle" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Usuario" Relationship="MachiConsultoraVFModel.GrupoUsuario" FromRole="Grupo" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="Idioma">
+    <Key>
+      <PropertyRef Name="Id_Idioma" />
+    </Key>
+    <Property Name="Id_Idioma" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Idioma1" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="PostulanteIdioma" Relationship="MachiConsultoraVFModel.FK_PostulanteIdioma_Idioma" FromRole="Idioma" ToRole="PostulanteIdioma" />
+  </EntityType>
+  <EntityType Name="LocalidadBarrio">
+    <Key>
+      <PropertyRef Name="Id_LB" />
+    </Key>
+    <Property Name="Id_LB" Type="Int32" Nullable="false" />
+    <Property Name="NombreLocalidad" Type="String" Nullable="false" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <Property Name="Id_Municipio" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Municipio" Relationship="MachiConsultoraVFModel.FK__Localidad__Id_Mu__5535A963" FromRole="LocalidadBarrio" ToRole="Municipio" />
+  </EntityType>
+  <EntityType Name="Modulo">
+    <Key>
+      <PropertyRef Name="Id_Modulo" />
+    </Key>
+    <Property Name="Id_Modulo" Type="Int32" Nullable="false" />
+    <Property Name="ModuloDescripcion" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <Property Name="Fijo" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Municipio">
+    <Key>
+      <PropertyRef Name="Id_Municipio" />
+    </Key>
+    <Property Name="Id_Municipio" Type="Int32" Nullable="false" />
+    <Property Name="NombreMunicipio" Type="String" Nullable="false" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <Property Name="Id_Provincia" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="LocalidadBarrio" Relationship="MachiConsultoraVFModel.FK__Localidad__Id_Mu__5535A963" FromRole="Municipio" ToRole="LocalidadBarrio" />
+    <NavigationProperty Name="Provincia" Relationship="MachiConsultoraVFModel.FK__Municipio__Id_Pr__5812160E" FromRole="Municipio" ToRole="Provincia" />
+  </EntityType>
+  <EntityType Name="NivelManejo">
+    <Key>
+      <PropertyRef Name="Id_NivelManejo" />
+    </Key>
+    <Property Name="Id_NivelManejo" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="NivelManejo1" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="PostulanteIdioma" Relationship="MachiConsultoraVFModel.FK_PostulanteIdioma_NivelManejo" FromRole="NivelManejo" ToRole="PostulanteIdioma" />
+  </EntityType>
+  <EntityType Name="Permiso">
+    <Key>
+      <PropertyRef Name="idPermiso" />
+    </Key>
+    <Property Name="idPermiso" Type="Int32" Nullable="false" />
+    <Property Name="CodigoPermiso" Type="Int32" Nullable="false" />
+    <Property Name="Detalle" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Usuario" Relationship="MachiConsultoraVFModel.UsuarioPermiso" FromRole="Permiso" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="PostulanteIdioma">
+    <Key>
+      <PropertyRef Name="Id_PostulanteIdioma" />
+    </Key>
+    <Property Name="Id_PostulanteIdioma" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Id_Idioma" Type="Int32" Nullable="false" />
+    <Property Name="Id_NivelManejo" Type="Int32" Nullable="false" />
+    <Property Name="idUsuario" Type="Int32" Nullable="false" />
+    <Property Name="Centro" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Idioma" Relationship="MachiConsultoraVFModel.FK_PostulanteIdioma_Idioma" FromRole="PostulanteIdioma" ToRole="Idioma" />
+    <NavigationProperty Name="NivelManejo" Relationship="MachiConsultoraVFModel.FK_PostulanteIdioma_NivelManejo" FromRole="PostulanteIdioma" ToRole="NivelManejo" />
+    <NavigationProperty Name="Usuario" Relationship="MachiConsultoraVFModel.FK_PostulanteIdioma_Usuario" FromRole="PostulanteIdioma" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="Provincia">
+    <Key>
+      <PropertyRef Name="Id_Provincia" />
+    </Key>
+    <Property Name="Id_Provincia" Type="Int32" Nullable="false" />
+    <Property Name="NombreProvincia" Type="String" Nullable="false" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Municipio" Relationship="MachiConsultoraVFModel.FK__Municipio__Id_Pr__5812160E" FromRole="Provincia" ToRole="Municipio" />
+  </EntityType>
+  <EntityType Name="Puestos">
+    <Key>
+      <PropertyRef Name="Id_Puesto" />
+    </Key>
+    <Property Name="Id_Puesto" Type="Int32" Nullable="false" />
+    <Property Name="DescripciónPuesto" Type="String" Nullable="false" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Busqueda" Relationship="MachiConsultoraVFModel.FK_Busqueda_Puestos" FromRole="Puestos" ToRole="Busqueda" />
+  </EntityType>
+  <EntityType Name="Servicio">
+    <Key>
+      <PropertyRef Name="Id_Servicio" />
+    </Key>
+    <Property Name="Id_Servicio" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Id_CategoriaServicio" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Precio" Type="Double" Nullable="false" />
+    <Property Name="Imagen" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="CategoriaServicio" Relationship="MachiConsultoraVFModel.FK_Servicio_CategoriaServicio" FromRole="Servicio" ToRole="CategoriaServicio" />
+    <NavigationProperty Name="ComprobanteDetalle" Relationship="MachiConsultoraVFModel.FK_ComprobanteDetalle_Servicio" FromRole="Servicio" ToRole="ComprobanteDetalle" />
+  </EntityType>
+  <EntityType Name="Sucursal">
+    <Key>
+      <PropertyRef Name="idSucursal" />
+    </Key>
+    <Property Name="idSucursal" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="direccion" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="telefono" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fax" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="idEmpresa" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ComprobanteCabecera" Relationship="MachiConsultoraVFModel.FK_ComprobanteCabecera_Sucursal" FromRole="Sucursal" ToRole="ComprobanteCabecera" />
+    <NavigationProperty Name="Empresa" Relationship="MachiConsultoraVFModel.FK_Sucursal_Empresa" FromRole="Sucursal" ToRole="Empresa" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TipoComprobante">
+    <Key>
+      <PropertyRef Name="idTipoComprobante" />
+    </Key>
+    <Property Name="idTipoComprobante" Type="Int32" Nullable="false" />
+    <Property Name="tipo" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="ComprobanteCabecera" Relationship="MachiConsultoraVFModel.FK_ComprobanteCabecera_TipoComprobante" FromRole="TipoComprobante" ToRole="ComprobanteCabecera" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="idUsuario" />
+    </Key>
+    <Property Name="idUsuario" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="password" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="detalle" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Cliente" Relationship="MachiConsultoraVFModel.FK_Cliente_Usuario" FromRole="Usuario" ToRole="Cliente" />
+    <NavigationProperty Name="CV" Relationship="MachiConsultoraVFModel.FK_CV_Usuario" FromRole="Usuario" ToRole="CV" />
+    <NavigationProperty Name="PostulanteIdioma" Relationship="MachiConsultoraVFModel.FK_PostulanteIdioma_Usuario" FromRole="Usuario" ToRole="PostulanteIdioma" />
+    <NavigationProperty Name="Grupo" Relationship="MachiConsultoraVFModel.GrupoUsuario" FromRole="Usuario" ToRole="Grupo" />
+    <NavigationProperty Name="Busqueda" Relationship="MachiConsultoraVFModel.UsuarioBusqueda" FromRole="Usuario" ToRole="Busqueda" />
+    <NavigationProperty Name="Permiso" Relationship="MachiConsultoraVFModel.UsuarioPermiso" FromRole="Usuario" ToRole="Permiso" />
+    <Property Type="String" Name="usr" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK_Busqueda_Puestos">
+    <End Role="Puestos" Type="MachiConsultoraVFModel.Puestos" Multiplicity="1" />
+    <End Role="Busqueda" Type="MachiConsultoraVFModel.Busqueda" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Puestos">
+        <PropertyRef Name="Id_Puesto" />
+      </Principal>
+      <Dependent Role="Busqueda">
+        <PropertyRef Name="Id_Puesto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Servicio_CategoriaServicio">
+    <End Role="CategoriaServicio" Type="MachiConsultoraVFModel.CategoriaServicio" Multiplicity="1" />
+    <End Role="Servicio" Type="MachiConsultoraVFModel.Servicio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategoriaServicio">
+        <PropertyRef Name="Id_CategoriaServicio" />
+      </Principal>
+      <Dependent Role="Servicio">
+        <PropertyRef Name="Id_CategoriaServicio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Cliente_Usuario">
+    <End Role="Usuario" Type="MachiConsultoraVFModel.Usuario" Multiplicity="1" />
+    <End Role="Cliente" Type="MachiConsultoraVFModel.Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="idUsuario" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ComprobanteCabecera_Sucursal">
+    <End Role="Sucursal" Type="MachiConsultoraVFModel.Sucursal" Multiplicity="0..1" />
+    <End Role="ComprobanteCabecera" Type="MachiConsultoraVFModel.ComprobanteCabecera" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sucursal">
+        <PropertyRef Name="idSucursal" />
+      </Principal>
+      <Dependent Role="ComprobanteCabecera">
+        <PropertyRef Name="idSucursal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ComprobanteCabecera_TipoComprobante">
+    <End Role="TipoComprobante" Type="MachiConsultoraVFModel.TipoComprobante" Multiplicity="1" />
+    <End Role="ComprobanteCabecera" Type="MachiConsultoraVFModel.ComprobanteCabecera" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoComprobante">
+        <PropertyRef Name="idTipoComprobante" />
+      </Principal>
+      <Dependent Role="ComprobanteCabecera">
+        <PropertyRef Name="tipoComprobante" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ComprobanteDetalle_ComprobanteCabecera">
+    <End Role="ComprobanteCabecera" Type="MachiConsultoraVFModel.ComprobanteCabecera" Multiplicity="1" />
+    <End Role="ComprobanteDetalle" Type="MachiConsultoraVFModel.ComprobanteDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ComprobanteCabecera">
+        <PropertyRef Name="idComprobanteCabecera" />
+      </Principal>
+      <Dependent Role="ComprobanteDetalle">
+        <PropertyRef Name="idComprobanteCabecera" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ComprobanteDetalle_Servicio">
+    <End Role="Servicio" Type="MachiConsultoraVFModel.Servicio" Multiplicity="1" />
+    <End Role="ComprobanteDetalle" Type="MachiConsultoraVFModel.ComprobanteDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Servicio">
+        <PropertyRef Name="Id_Servicio" />
+      </Principal>
+      <Dependent Role="ComprobanteDetalle">
+        <PropertyRef Name="Id_Servicio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CV_DatosPersonales">
+    <End Role="DatosPersonales" Type="MachiConsultoraVFModel.DatosPersonales" Multiplicity="1" />
+    <End Role="CV" Type="MachiConsultoraVFModel.CV" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DatosPersonales">
+        <PropertyRef Name="Id_DatosPersonales" />
+      </Principal>
+      <Dependent Role="CV">
+        <PropertyRef Name="Id_DatosPersonales" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CV_EstudiosFormales">
+    <End Role="EstudiosFormales" Type="MachiConsultoraVFModel.EstudiosFormales" Multiplicity="1" />
+    <End Role="CV" Type="MachiConsultoraVFModel.CV" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstudiosFormales">
+        <PropertyRef Name="Id_EstudiosFormales" />
+      </Principal>
+      <Dependent Role="CV">
+        <PropertyRef Name="Id_EstudiosFormales" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CV_Usuario">
+    <End Role="Usuario" Type="MachiConsultoraVFModel.Usuario" Multiplicity="1" />
+    <End Role="CV" Type="MachiConsultoraVFModel.CV" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="idUsuario" />
+      </Principal>
+      <Dependent Role="CV">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sucursal_Empresa">
+    <End Role="Empresa" Type="MachiConsultoraVFModel.Empresa" Multiplicity="1" />
+    <End Role="Sucursal" Type="MachiConsultoraVFModel.Sucursal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="idEmpresa" />
+      </Principal>
+      <Dependent Role="Sucursal">
+        <PropertyRef Name="idEmpresa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PostulanteIdioma_Idioma">
+    <End Role="Idioma" Type="MachiConsultoraVFModel.Idioma" Multiplicity="1" />
+    <End Role="PostulanteIdioma" Type="MachiConsultoraVFModel.PostulanteIdioma" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Idioma">
+        <PropertyRef Name="Id_Idioma" />
+      </Principal>
+      <Dependent Role="PostulanteIdioma">
+        <PropertyRef Name="Id_Idioma" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Localidad__Id_Mu__5535A963">
+    <End Role="Municipio" Type="MachiConsultoraVFModel.Municipio" Multiplicity="1" />
+    <End Role="LocalidadBarrio" Type="MachiConsultoraVFModel.LocalidadBarrio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Municipio">
+        <PropertyRef Name="Id_Municipio" />
+      </Principal>
+      <Dependent Role="LocalidadBarrio">
+        <PropertyRef Name="Id_Municipio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Municipio__Id_Pr__5812160E">
+    <End Role="Provincia" Type="MachiConsultoraVFModel.Provincia" Multiplicity="1" />
+    <End Role="Municipio" Type="MachiConsultoraVFModel.Municipio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Provincia">
+        <PropertyRef Name="Id_Provincia" />
+      </Principal>
+      <Dependent Role="Municipio">
+        <PropertyRef Name="Id_Provincia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PostulanteIdioma_NivelManejo">
+    <End Role="NivelManejo" Type="MachiConsultoraVFModel.NivelManejo" Multiplicity="1" />
+    <End Role="PostulanteIdioma" Type="MachiConsultoraVFModel.PostulanteIdioma" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NivelManejo">
+        <PropertyRef Name="Id_NivelManejo" />
+      </Principal>
+      <Dependent Role="PostulanteIdioma">
+        <PropertyRef Name="Id_NivelManejo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PostulanteIdioma_Usuario">
+    <End Role="Usuario" Type="MachiConsultoraVFModel.Usuario" Multiplicity="1" />
+    <End Role="PostulanteIdioma" Type="MachiConsultoraVFModel.PostulanteIdioma" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="idUsuario" />
+      </Principal>
+      <Dependent Role="PostulanteIdioma">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="GrupoUsuario">
+    <End Role="Grupo" Type="MachiConsultoraVFModel.Grupo" Multiplicity="*" />
+    <End Role="Usuario" Type="MachiConsultoraVFModel.Usuario" Multiplicity="*" />
+  </Association>
+  <Association Name="UsuarioBusqueda">
+    <End Role="Busqueda" Type="MachiConsultoraVFModel.Busqueda" Multiplicity="*" />
+    <End Role="Usuario" Type="MachiConsultoraVFModel.Usuario" Multiplicity="*" />
+  </Association>
+  <Association Name="UsuarioPermiso">
+    <End Role="Permiso" Type="MachiConsultoraVFModel.Permiso" Multiplicity="*" />
+    <End Role="Usuario" Type="MachiConsultoraVFModel.Usuario" Multiplicity="*" />
+  </Association>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SPBuscarEventosBitacora_Result">
+    <Property Type="Int32" Name="idBitacora" Nullable="false" />
+    <Property Type="String" Name="Modulo" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Tipo" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="Fecha" Nullable="false" />
+    <Property Type="String" Name="Detalle" Nullable="false" MaxLength="2000" />
+  </ComplexType>
+</Schema>

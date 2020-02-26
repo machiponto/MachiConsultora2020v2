@@ -1,0 +1,94 @@
+﻿@model BIZ.Producto
+
+@{
+    ViewBag.Title = "Detalle de Producto";
+}
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    
+    <div class="bs-docs-section">
+
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="page-header">
+                    <h1 id="tables">@Session["GenerarProduccion"]</h1>
+                </div>
+
+                <div class="bs-example">
+                    <table class="table table-striped table-bordered table-hover">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    @Session["Tipo"]
+                                </td>
+                                <td>
+                                    @Html.DisplayTextFor(model => model.tipo)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    @Session["Codigo"]
+                                </td>
+                                <td>
+                                    @Html.DisplayTextFor(model => model.codigo)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    @Session["Categoria"]
+                                </td>
+                                <td>
+                                    @Html.DisplayTextFor(model => model.categoria)
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    @Session["Detalle"]
+                                </td>
+                                <td>
+                                    @Html.DisplayTextFor(model => model.detalle)
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    @Session["Cantidad"]
+                                </td>
+                                <td>
+                                    @Html.EditorFor(model => model.cantidad)
+                                    @Html.ValidationMessageFor(model => model.cantidad)
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    @Session["Imagen"]
+                                </td>
+                                <td>
+                                    <img src="~/Content/productos/@Html.DisplayFor(model => model.ubicacionFoto)" alt=""/>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+                    <button type="reset" class="btn btn-default">@Session["Cancelar"]</button>
+                    <button type="submit" class="btn btn-primary">@Session["Generar"]</button>
+                </div>
+                <!-- /example -->
+            </div>
+        </div>
+    </div>
+    
+    
+}

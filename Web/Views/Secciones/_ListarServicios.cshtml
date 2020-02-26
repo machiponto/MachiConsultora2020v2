@@ -1,0 +1,17 @@
+﻿@model IEnumerable<BI.ClsServicio>
+
+
+    @if (Model != null)
+    {
+        foreach (var item in Model)
+        {
+            <div class="col-sm-4 col-lg-4 col-md-4">
+             <div class="thumbnail">
+                 <img resource="" />
+                 <div class="caption">
+                     @*<h4 class="pull-right"@Html.DisplayFor(Modelitem )*@
+                 </div>
+             </div>
+            </div>
+        }
+    }

@@ -1,0 +1,128 @@
+﻿@model BIZ.Factura
+
+@{
+    ViewBag.Title = "Factura";
+    Layout = "~/Views/Shared/_BootstrapLayout.empty.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Factura</title>
+
+    <link rel="stylesheet" type="text/css" href="/Content/factura.css" />
+
+    <style type="text/css">
+        .float-derecha {
+            text-align: right;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <div class="main">
+        
+        <div class="div-imagenes">
+            <img class="logo" src="/Content/logos/Logo%20Pagina%20Principal.jpg" alt="logo" />
+        </div>
+
+        <div class="div-direccion">
+
+            <div class="letraCapital">
+                @Html.DisplayFor(model => model.letra)
+            </div>
+
+            <div class="div-titulo" style="text-align: center;">
+                <h1 class="Titulo-celeste">@Session["Factura"]</h1>
+            </div>
+
+        </div>
+
+        <div class="div-miselania">
+
+            <div class="div-titulo">
+                <h1 class="Titulo-celeste">@Session["cliente"]</h1>
+                <p>
+                    <b>@Session["Nombre"]: @Html.DisplayFor(model => model.oCliente.nombre)</b><br />
+                    <b>@Session["email"]: @Html.DisplayFor(model => model.oCliente.email)</b><br />
+                    <b>@Session["telefono"]: @Html.DisplayFor(model => model.oCliente.telefono)</b><br />
+                </p>
+            </div>
+
+        </div>
+
+        <div class="div-menu">
+            <h1>@Session["sucursal"]</h1><br />
+            <p>
+                <b>Razon Social: @Html.DisplayFor(model => model.oSucursal.oEmpresa.razonSocial)</b><br />
+                <b>Dir: @Html.DisplayFor(model => model.oSucursal.direccion)</b><br />
+                <b>Tel: @Html.DisplayFor(model => model.oSucursal.telefono)</b><br />
+                <b>Fax: @Html.DisplayFor(model => model.oSucursal.fax)</b><br />
+            </p>
+        </div>
+
+        <div class="div-formulario">
+
+            <div class="div-titulo-formulario">
+                <h1>@Session["productos"]</h1>
+            </div>
+
+            <div class="div-cuerpo-formulario">
+                <table width="90%" cellpadding="5">
+                    <thead>
+                    <tr>
+                        <th class="text-center">
+                            @Session["Codigo"]
+                        </th>
+                        <th class="text-center">
+                            @Session["Categoria"]
+                        </th>
+                        <th class="text-center">
+                            @Session["Cantidad"]
+                        </th>
+                        <th class="text-center">
+                            @Session["CostoPublico"]
+                        </th>
+                    </tr>
+                </thead>
+                    @foreach (var _prod in Model.listaProductos)
+                    {
+                    <tr style="background-color: #dddddd;">
+                        <td align="center">
+                            @Html.DisplayFor(model => _prod.codigo)
+                        </td>
+                        <td align="center">
+                            @Html.DisplayFor(model => _prod.categoria)
+                        </td>
+                        <td align="center">
+                            @Html.DisplayFor(model => _prod.cantidad)
+                        </td>
+                        <td align="center">
+                            $ @Html.DisplayFor(model => _prod.costoPublico)
+                        </td>
+                    </tr><br />
+                    }
+                </table>
+
+
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <div style="float: right; vertical-align: bottom; padding-right: 50px">
+                <div style="background-color: #dddddd;">
+                    @Session["MontoTotal"]: $ @ViewBag.CostoTotal
+                </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
+

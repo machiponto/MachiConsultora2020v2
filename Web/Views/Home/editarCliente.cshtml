@@ -1,0 +1,178 @@
+﻿@model BI.ClsCliente
+@{
+    ViewBag.Title = "editarCliente";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+    <script src="~/Scripts/jquery-1.11.0.js"></script>
+    <script>
+        
+        function checkEmail(emailAddress) {
+            var sQtext = '[^\\x0d\\x22\\x5c\\x80-\\xff]';
+            var sDtext = '[^\\x0d\\x5b-\\x5d\\x80-\\xff]';
+            var sAtom = '[^\\x00-\\x20\\x22\\x28\\x29\\x2c\\x2e\\x3a-\\x3c\\x3e\\x40\\x5b-\\x5d\\x7f-\\xff]+';
+            var sQuotedPair = '\\x5c[\\x00-\\x7f]';
+            var sDomainLiteral = '\\x5b(' + sDtext + '|' + sQuotedPair + ')*\\x5d';
+            var sQuotedString = '\\x22(' + sQtext + '|' + sQuotedPair + ')*\\x22';
+            var sDomain_ref = sAtom;
+            var sSubDomain = '(' + sDomain_ref + '|' + sDomainLiteral + ')';
+            var sWord = '(' + sAtom + '|' + sQuotedString + ')';
+            var sDomain = sSubDomain + '(\\x2e' + sSubDomain + ')*';
+            var sLocalPart = sWord + '(\\x2e' + sWord + ')*';
+            var sAddrSpec = sLocalPart + '\\x40' + sDomain; // complete RFC822 email address spec
+            var sValidEmail = '^' + sAddrSpec + '$'; // as whole string
+
+            var reValidEmail = new RegExp(sValidEmail);
+
+            if (reValidEmail.test(emailAddress)) {
+                return true;
+            }
+
+            return false;
+        }
+
+        $(document).ready(function () {
+
+            $("#nombre").blur(function () {
+                if ($("#nombre").val().length > 1) {
+                    $("#nombre_valid").css("display", "block");
+                    $("#nombre_error").css("display", "none");
+                } else {
+                    $("#nombre_error").css("display", "block");
+                    $("#nombre_valid").css("display", "none");
+                }
+            });
+
+            $("#email").blur(function () {
+                if (checkEmail($("#email").val())) {
+                    $("#email_valid").css("display", "block");
+                    $("#email_error").css("display", "none");
+                } else {
+                    $("#email_error").css("display", "block");
+                    $("#email_valid").css("display", "none");
+                }
+            });
+
+
+            $("#direccion").blur(function () {
+                if ($("#direccion").val().length > 1) {
+                    $("#direccion_valid").css("display", "block");
+                    $("#direccion_error").css("display", "none");
+                } else {
+                    $("#direccion_error").css("display", "block");
+                    $("#direccion_valid").css("display", "none");
+                }
+            });
+
+            $("#telefono").blur(function () {
+                if ($("#telefono").val().length > 1) {
+                    $("#telefono_valid").css("display", "block");
+                    $("#telefono_error").css("display", "none");
+                } else {
+                    $("#telefono_error").css("display", "block");
+                    $("#telefono_valid").css("display", "none");
+                }
+            });
+            
+
+            
+        });
+    </script>
+    <div class="container">
+
+        <div class="col-md-9">
+
+            <div class="bs-docs-section">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="page-header">
+
+                            @if (@ViewBag.mostrarMensaje == "OK")
+                           {           
+                            <div class="alert alert-info alert-dismissible" role="alert">
+                                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                @ViewBag.mensaje
+                            </div>   
+                           }else if(@ViewBag.mostrarMensaje == "ERROR"){
+                               <div class="alert alert-danger alert-dismissible" role="alert">
+                                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                @ViewBag.mensaje
+                            </div>
+                           }else{}
+
+                            <h1 id="tables">@Session["editarCliente"]</h1>
+                        </div>
+
+                        <div class="bs-example">
+                            <table class="table table-striped table-bordered table-hover">
+                  
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            @Session["nombre"]
+                                        </td>
+                                        <td>
+                                            <div style="float: left;">@Html.TextBoxFor(model => model.nombre)</div>
+                                            <img src="~/Content/images/valid.png" id="nombre_valid" style="display: none;" />
+                                            <img src="~/Content/images/error.png" id="nombre_error" style="display: none;" />
+                                        </td>
+                                    </tr>
+
+                                     <tr>
+                                        <td>
+                                            @Session["mail"]
+                                        </td>
+                                        <td>
+                                            <div style="float: left;">@Html.TextBoxFor(model => model.mail)</div>
+                                            <img src="~/Content/images/valid.png" id="email_valid" style="display: none;" />
+                                            <img src="~/Content/images/error.png" id="email_error" style="display: none;" />
+                                        </td>
+                                    </tr>
+
+                                     <tr>
+                                        <td>
+                                            @Session["direccion"]
+                                        </td>
+                                        <td>
+                                            <div style="float: left;">@Html.TextBoxFor(model => model.nombre)</div>
+                                            <img src="~/Content/images/valid.png" id="direccion_valid" style="display: none;" />
+                                            <img src="~/Content/images/error.png" id="direccion_error" style="display: none;" />
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            @Session["telefono"]
+                                        </td>
+                                        <td>
+                                            <div style="float: left;">@Html.TextBoxFor(model => model.telefono)</div>
+                                            <img src="~/Content/images/valid.png" id="telefono_valid" style="display: none;" />
+                                            <img src="~/Content/images/error.png" id="telefono_error" style="display: none;" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="hidden" name="pUsuario" value="@Session["usuario"]" />
+            <input type="hidden" name="idCliente" value="@Model.idCliente" />
+            <input type="hidden" name="idUsuario" value="@Model.idUsuario" />
+            <button type="reset" class="btn btn-default">@Session["Cancelar"]</button>
+            <button type="submit" class="btn btn-primary">@ Session["Guardar"]</button>
+
+        </div>
+    </div>
+
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
